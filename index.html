@@ -37,6 +37,26 @@
                         });
                 })('1735090b-2e95-42c5-6187-aa08ea78322c');
                 </script>
+                <script>
+                    function popup(){
+                        const el = document.getElementById('surprise');
+                        el.style.display = 'block';
+                    }
+                    function hide(){
+                        const el = document.getElementById('surprise');
+                        el.style.display = 'none';
+                    }
+                </script>
+                <style>
+                    #surprise {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        border: 1px solid grey;
+                        padding: 100px;
+                    }
+                </style>
         </head>
         <body>
             <h1>brandon's test site 111!!!11</h1>
@@ -45,8 +65,11 @@
             <img src="static/cat.png" height="200" width="300"/>
             <p>test</p>
             <p>tag me</p>
-            <div>
+            <div onmouseover="popup()" onmouseout="hide()">
                 I am a div
+            </div>
+            <div id="surprise" style="display:none;">
+                surprise div
             </div>
             <img src="static/cat_image.png" height="200" width="300"/>
             <a href="google.com">link to google</a>
