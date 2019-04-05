@@ -42,10 +42,6 @@
                         const el = document.getElementById('surprise');
                         el.style.display = 'block';
                     }
-                    function hide(){
-                        const el = document.getElementById('surprise');
-                        el.style.display = 'none';
-                    }
                 </script>
                 <style>
                     #surprise {
@@ -65,7 +61,7 @@
             <img src="static/cat.png" height="200" width="300"/>
             <p>test</p>
             <p>tag me</p>
-            <div onmouseover="popup()" onmouseout="hide()">
+            <div onmouseover="popup()">
                 I am a div
             </div>
             <div id="surprise" style="display:none;">
