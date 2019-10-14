@@ -9,7 +9,7 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
             <title>yep</title>
                 <script>
-                    setTimeout(() => { initPendo(); }, 10000);
+                    setTimeout(() => { initPendo(); }, 3000);
 
                     initPendo = () => {
                         (function(apiKey){
@@ -41,6 +41,9 @@
                                         zipCode: '27601'
                                     }
                                 });
+                                const loadedText = document.getElementById('timer');
+                                loadedText.innerText = 'top frame LOADED';
+                                loadedText.className = 'loaded';
                         })('1735090b-2e95-42c5-6187-aa08ea78322c');
                     }
                 </script>
@@ -51,6 +54,15 @@
                     }
                 </script>
                 <style>
+                    .not-loaded {
+                        background-color: yellow;
+                    }
+                    .loaded {
+                        background-color: lightgreen;
+                    }
+                    #timer {
+                        display: inline-block;
+                    }
                     body {
                         height: 100%;
                     }
@@ -73,6 +85,9 @@
             <p>tag me</p>
             <div>
                 I am a div
+            </div>
+            <div id='timer' class="not-loaded">
+                not loaded
             </div>
             <div class="testingClass">
                 <span class="deepBro">
