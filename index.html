@@ -46,7 +46,7 @@
                                 loadedText.innerText = 'top frame LOADED';
                                 loadedText.className = 'loaded';
 
-                                if(queryString.overrideNative) {
+                                if(queryString.overrideNative === 'on') {
                                     window.scrollTo = function () {
                                         console.log('scrollTo overwritten')
                                     }
