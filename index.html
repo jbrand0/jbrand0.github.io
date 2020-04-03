@@ -30,10 +30,16 @@
                                 }
                             );
 
+                            var junkArray = [];
+                            while (junkArray.length < 10000) {
+                                junkArray.push('fdjskfasdfjadsfdsafasfdsa');
+                            }
+
                             pendo.initialize({
                                 visitor: {
                                     id: queryString.visitor || 'testuser@pendo',
-                                    user_id: 1
+                                    user_id: 1,
+                                    junkArray
                                 },
                                 apiKey: '1735090b-2e95-42c5-6187-aa08ea78322c',
                                 account: {
@@ -73,7 +79,7 @@
                         background-color: green;
                     }
                     .big {
-                        /* outline: solid green 1px; */
+                        /*  */
                     }
                     #uggobutton {
                         position: fixed;
@@ -92,7 +98,7 @@
             <!-- <img src="static/cat.png" height="200" width="300"/> -->
             <p>test</p>
             <p>tag me</p>
-            <div style="outline: solid green 1px;" class="big">
+            <div class="big">
                 big div
             </div>
             <div>
@@ -105,7 +111,7 @@
                 <span class="deepBro">
                 </span>
             </div>
-            <iframe src="inner-frame.htm?test=cool"" style="display:block; width: 400px; height: 500px;margin-left: 5vw"></iframe>
+            <!-- <iframe src="inner-frame.htm?test=cool"" style="display:block; width: 400px; height: 500px;margin-left: 5vw"></iframe> -->
             <!-- <img src="static/cat_image.png" height="200" width="300"/> -->
             <a href="google.com">link to google</a>
             <div>
@@ -114,11 +120,11 @@
             <div class="inline">
                 testing testing
             </div>
-            <div style="outline: solid green 1px; position: relative" class="big">
+            <div style="position: relative" class="big">
                 big div
             </div>
 
-            <div style="outline: solid green 1px;" class="big">
+            <div class="big">
                 big div
             </div>
             <!-- <footer> -->
