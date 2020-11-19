@@ -57,6 +57,14 @@
                     })('1735090b-2e95-42c5-6187-aa08ea78322c');
                 </script>
                 <style>
+                    input[type="image"] {
+                        padding: 10px;
+                        margin: 10px;
+                        border: 10px solid black;
+                        outline: 5px solid yellow;
+                        line-height: 10;
+                    }
+
                     .not-loaded {
                         background-color: yellow;
                     }
@@ -77,9 +85,6 @@
                     }
                     div:focus {
                         background-color: green;
-                    }
-                    .big {
-                        /*  */
                     }
                     #uggobutton {
                         position: fixed;
@@ -144,9 +149,9 @@
             <!-- <img src="static/cat.png" height="200" width="300"/> -->
             <p>test</p>
             <p>tag me</p>
-            <div class="big">
+            <!-- <div class="big">
                 big div
-            </div>
+            </div> -->
             <div>
                 Hi test@gmail.com, Please give me a call at 555-555-5555
             </div>
@@ -169,13 +174,20 @@
             <div class="inline">
                 testing testing
             </div>
-            <div style="position: relative" class="big">
+            <a href="https://pendo-dev.appspot.com/guides/BUdhye8B7Dz9c_mNWkRzYS8LhK4">guide 1</a>
+            <a href="https://pendo-dev.appspot.com/guides/KH5hDl0Rl4s-yfbmnLDBUz28cio">guide 2</a>
+            <!-- <div style="position: relative" class="big">
                 big div
-            </div>
+            </div> -->
 
+            <input id="myinput" type="text" value="oh ok"/>
+
+            <input class="big" type="button" value="input thats of type button">
+            <button>button yo</button>
             <div class="big">
                 big div
             </div>
+            <a href="https://google.com">go to google</a>
             <!-- <footer> -->
                 <button id="uggobutton">Help</button>
             <!-- </footer> -->
@@ -184,6 +196,19 @@
             <div>
                 another block
             </div>
+
+            <video controls width="250">
+                <source src="./media/cc0-videos/flower.webm"
+                        type="video/webm">
+            
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+
+            <audio controls>
+                <source src="./media/audio/goat.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+              </audio>
+
             <script>
                 function openNav() {
                   document.getElementById("mySidenav").style.width = "250px";
