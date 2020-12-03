@@ -7,6 +7,8 @@
             img-src local.pendo.io:8081 https://cradlepoint.com jbrand0.github.io cdn.pendo.io pendo-dev-static.storage.googleapis.com pendo-dev.appspot.com pendo-dev-static-5692234171154432.storage.googleapis.com data.pendo.io;
             connect-src local.pendo.io:8081 pendo-dev.appspot.com data.pendo.io pendo-dev-static-5692234171154432.storage.googleapis.com;
             child-src local.pendo.io:8081 pendo-dev.appspot.com;"> -->
+            <!-- <META HTTP-EQUIV='Content-Security-Policy'
+            CONTENT="style-src 'self'"> -->
             <!-- <meta charset=utf-8>
             <meta http-equiv=x-ua-compatible content="ie=edge">
             <meta name=viewport content="width=device-width,initial-scale=1"> -->
@@ -57,13 +59,13 @@
                     })('1735090b-2e95-42c5-6187-aa08ea78322c');
                 </script>
                 <style>
-                    input[type="image"] {
+                    /* input[type="image"] {
                         padding: 10px;
                         margin: 10px;
                         border: 10px solid black;
                         outline: 5px solid yellow;
                         line-height: 10;
-                    }
+                    } */
 
                     .not-loaded {
                         background-color: yellow;
@@ -165,7 +167,7 @@
             <div style="width: 100px; height: 100px; border-radius: 15px; background-color: lightgreen">
                 interesting div
             </div>
-            <!-- <iframe src="inner-frame.htm?test=cool"" style="display:block; width: 400px; height: 500px;margin-left: 5vw"></iframe> -->
+            <iframe src="inner-frame.htm?test=cool"" style="display:block; width: 400px; height: 500px;margin-left: 5vw"></iframe>
             <!-- <img src="static/cat_image.png" height="200" width="300"/> -->
             <a href="google.com">link to google</a>
             <div>

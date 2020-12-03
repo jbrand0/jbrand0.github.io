@@ -31,12 +31,6 @@
                             zipCode: '27601'
                         }
                     });
-
-                    if(queryString.overrideNative === 'on') {
-                        window.scrollTo = function () {
-                            console.log('scrollTo overwritten')
-                        }
-                    }
             })('1735090b-2e95-42c5-6187-aa08ea78322c');
         </script>
         <meta charset=utf-8>
@@ -48,16 +42,16 @@
         <div id=app>
             really very nice
         </div>
-        <div style="outline: solid blue 1px;" class="big">
+        <div>
             big div
         </div>
         <p> some paragraph stuff</p>
-        <div style="outline: solid blue 1px;" class="big">
+        <div>
             big div
         </div>
         <h2> 1 level deep </h2>
         <p>another paragraph</p>
-        <div style="outline: solid blue 1px;" class="big">
+        <div>
             big div
         </div>
     </body>
